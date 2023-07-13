@@ -2,6 +2,8 @@
 
 This repository contains a Python Flask application that utilizes the Facebook Graph API to generate access tokens. The access tokens are required to make authenticated requests to the Facebook Graph API and access various features and data on the Facebook platform.
 
+![Screenshot 1](https://github.com/Tonmoy-abc/facebook-manual-login/blob/main/img/sc1.png?raw=true)
+
 ## Prerequisites ##
 
 To run this application, you need to have the following installed:
@@ -12,6 +14,8 @@ To run this application, you need to have the following installed:
 - `Virtualenv (version 20.14.1 or higher)`
 
 You also need to have a Facebook Developer account and an app created on the Facebook Developer platform. You will need the app ID, app secret, and other necessary credentials to authenticate and generate access tokens.
+
+![Screenshot 1](https://github.com/Tonmoy-abc/facebook-manual-login/blob/main/img/sc2.png?raw=true)
 
 ## Getting Started ##
 
@@ -53,10 +57,6 @@ python app.py
 2. [APP_SECRET][app_secret]
 3. [PAGE_ID][page_id]
 4. [Access Tokens][access_tokens]
-
-![Screenshot 1](https://github.com/Tonmoy-abc/facebook-manual-login/blob/main/img/sc1.png?raw=true)
-
-![Screenshot 1](https://github.com/Tonmoy-abc/facebook-manual-login/blob/main/img/sc2.png?raw=true)
 
 ## Contributing ##
 
