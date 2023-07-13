@@ -54,6 +54,10 @@ python app.py
 3. [PAGE_ID][page_id]
 4. [Access Tokens][access_tokens]
 
+![Screenshot 1](https://github.com/Tonmoy-abc/facebook-manual-login/blob/main/img/sc1?raw=true)
+
+![Screenshot 1](https://github.com/Tonmoy-abc/facebook-manual-login/blob/main/img/sc2?raw=true)
+
 ## Contributing ##
 
 Contributions to this project are welcome! If you find any issues or want to add new features, feel free to open a pull request or submit an issue.
