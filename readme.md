@@ -21,13 +21,25 @@ You also need to have a Facebook Developer account and an app created on the Fac
 
 1. Clone this repository to your local machine or download the ZIP file.
 
-2. Install the required dependencies by running the following command in your terminal or command prompt:
+2. Create a virtual environment by running the following command in your terminal or command prompt:
+
+```markdown
+virtualenv env
+```
+
+3. Activate the virtual environment by running the following command in your terminal or command prompt:
+
+```markdown
+./env/Scripts/Activate
+```
+
+4. Install the required dependencies by running the following command in your terminal or command prompt:
 
 ```markdown
 pip install -r requirements.txt
 ```
 
-3. Open the config file and replace the placeholders with your Facebook app credentials:
+5. Open the `config.py` file and replace the placeholders with your Facebook app credentials:
 
 
 ```python
@@ -41,15 +53,15 @@ app_secret = 'YOUR_APP_SECRET'
 page_id = 'YOUR_PAGE_ID'
 ```  
 
-4. Save the changes and run the Flask application by executing the following command:
+6. Save the changes and run the Flask application by executing the following command:
 
 ```markdown
 python app.py
 ```
 
-5. Open your web browser and navigate to <http://localhost:8888>. You should see the access token generator interface.
+7. Open your web browser and navigate to <http://localhost:8888>. You should see the access token generator interface.
 
-6. Enter click on the "Access Token" button. Follow the authentication flow, and upon successful authentication, you will receive an access token.
+8. Enter click on the "Access Token" button. Follow the authentication flow, and upon successful authentication, you will receive an access token.
 
 ## Facebook Credentials ##
 
