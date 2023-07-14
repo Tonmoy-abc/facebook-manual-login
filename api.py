@@ -50,6 +50,7 @@ def get_user_access_token(app_id, app_secret, redirect_uri, code):
         return access_token
     else:
         print('Error exchanging code for access token:', response.json())
+        raise Exception()
 
 
 def get_page_access_token(page_id , user_access_token):
@@ -65,3 +66,4 @@ def get_page_access_token(page_id , user_access_token):
         return access_token
     else:
         print('Error exchanging code for access token:', response.json())
+        raise Exception()

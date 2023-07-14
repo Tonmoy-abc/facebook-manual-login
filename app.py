@@ -21,7 +21,7 @@ def facebook_red():
     redirect_uri = config.redirect_uri
     authorization_code = request.query_string.decode().split('=')[1]
     user_access_token = get_user_access_token(app_id, app_secret, redirect_uri, authorization_code)
-    if config.page_id == 'YOUR_PAGE_ID':
+    if config.page_id == 'YOUR_PAGE_ID' or config.page_id.strip() == '':
         return config.Template.replace('/*start*/', config.login_success.replace('%val%', user_access_token))
     page_access_token = get_page_access_token(config.page_id, user_access_token)
     return config.Template.replace('/*start*/', config.login_success.replace('%val%', page_access_token))
