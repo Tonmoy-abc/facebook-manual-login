@@ -63,6 +63,14 @@ python app.py
 
 8. Enter click on the "Access Token" button. Follow the authentication flow, and upon successful authentication, you will receive an access token.
 
+### Easy Install ###
+
+Just Run the following command in your terminal or command prompt and everything will be installed.
+
+```markdown
+python install.py
+```
+
 ## Facebook Credentials ##
 
 1. [APP_ID][app_id]
