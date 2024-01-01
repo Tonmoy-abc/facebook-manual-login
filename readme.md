@@ -17,6 +17,7 @@ You also need to have a Facebook Developer account and an app created on the Fac
 
 ![Screenshot 1](https://github.com/Tonmoy-abc/facebook-manual-login/blob/main/img/sc1.png?raw=true)
 ![Screenshot 2](https://github.com/Tonmoy-abc/facebook-manual-login/blob/main/img/sc2.png?raw=true)
+![Screenshot 3](https://github.com/Tonmoy-abc/facebook-manual-login/blob/main/img/sc3.png?raw=true)
 ## Getting Started ##
 
 1. Clone this repository to your local machine or download the ZIP file.

@@ -3,6 +3,9 @@ app_secret = 'YOUR_APP_SECRET'
 redirect_uri = 'http://localhost:8888/fb_tokens'
 page_id = 'YOUR_PAGE_ID'
 
+with open('config.txt', 'r') as f:
+    app_id, app_secret, page_id =f.read().split('\n')
+
 login_success = """<div class="container">
             <h3 class="pt-5 text-center pb-4">Facebook Access Token Graph API</h3>
             <div class="input-group mb-3">
