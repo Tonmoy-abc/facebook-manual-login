@@ -12,13 +12,13 @@ def generate_random_string(length):
 def manual_auth(app_id, redirect_uri, code_challenge, nonce):
     url = "https://www.facebook.com/v17.0/dialog/oauth"
     params = {
-        "client_id": app_id,
+        "client_id": app_id, 
         "scope":"openid",
         "response_type":"code", 
         'redirect_uri': redirect_uri, 
-        "code_challenge": code_challenge,
+        "code_challenge": code_challenge, 
         "code_challenge_method":"S256",
-        "nonce": nonce 
+        "nonce": nonce
     }
     url = requests.Request('GET', url, params=params).prepare().url
     return url
@@ -35,7 +35,7 @@ def get_facebook_login_url(app_id, redirect_uri, scope):
     return url
 
 
-def get_user_access_token(app_id, app_secret, redirect_uri, code):
+def exchange_code_for_access_token(app_id, app_secret, redirect_uri, code):
     url = 'https://graph.facebook.com/v17.0/oauth/access_token'
     params = {
         'client_id': app_id,
@@ -50,7 +50,6 @@ def get_user_access_token(app_id, app_secret, redirect_uri, code):
         return access_token
     else:
         print('Error exchanging code for access token:', response.json())
-        raise Exception()
 
 
 def get_page_access_token(page_id , user_access_token):
@@ -66,4 +65,13 @@ def get_page_access_token(page_id , user_access_token):
         return access_token
     else:
         print('Error exchanging code for access token:', response.json())
-        raise Exception()
+
+
+def debug_access_token(debug_token, valid_token):
+    url = f"https://graph.facebook.com/v17.0/debug_token"
+    params = {
+        "input_token": debug_token,
+        "access_token": valid_token
+    }
+    response = requests.get(url, params)
+    return response.json()
