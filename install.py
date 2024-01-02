@@ -1,4 +1,5 @@
 import os
+import platform
 try:
     import virtualenv
 except:
